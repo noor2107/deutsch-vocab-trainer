@@ -1,22 +1,84 @@
 [
     {
         "word": "Tisch",
+        "type": "noun",
         "article": "der",
-        "meaning": "table"
+        "plural": "Tische",
+        "meaning": "table",
+        "example": "Der Tisch ist groß."
     },
+
     {
         "word": "Lampe",
+        "type": "noun",
         "article": "die",
-        "meaning": "lamp"
+        "plural": "Lampen",
+        "meaning": "lamp",
+        "example": "Die Lampe ist hell."
     },
+
     {
         "word": "Buch",
+        "type": "noun",
         "article": "das",
-        "meaning": "book"
+        "plural": "Bücher",
+        "meaning": "book",
+        "example": "Das Buch liegt auf dem Tisch."
     },
+
     {
-        "word": "Haus",
-        "article": "das",
-        "meaning": "house"
+        "word": "Umgebung",
+        "type": "noun",
+        "article": "die",
+        "plural": "Umgebungen",
+        "meaning": "environment / surroundings",
+        "example": "Die Umgebung ist sehr schön."
+    },
+
+    {
+        "word": "Entscheidung",
+        "type": "noun",
+        "article": "die",
+        "plural": "Entscheidungen",
+        "meaning": "decision",
+        "example": "Das war eine wichtige Entscheidung."
+    },
+
+    {
+        "word": "gehen",
+        "type": "verb",
+        "meaning": "to go",
+        "partizip2": "gegangen",
+        "example": "Ich bin nach Hause gegangen."
+    },
+
+    {
+        "word": "machen",
+        "type": "verb",
+        "meaning": "to do / to make",
+        "partizip2": "gemacht",
+        "example": "Ich habe meine Hausaufgaben gemacht."
+    },
+
+    {
+        "word": "sehen",
+        "type": "verb",
+        "meaning": "to see",
+        "partizip2": "gesehen",
+        "example": "Ich habe einen Film gesehen."
+    },
+
+    {
+        "word": "wichtig",
+        "type": "adjective",
+        "meaning": "important",
+        "example": "Das ist sehr wichtig."
+    },
+
+    {
+        "word": "schnell",
+        "type": "adjective",
+        "meaning": "fast",
+        "example": "Das Auto ist schnell."
     }
 ]
