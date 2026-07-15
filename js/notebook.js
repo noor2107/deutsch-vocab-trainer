@@ -17,15 +17,22 @@ loadSessions();
 
 async function loadSessions(){
 
-    const response =
-    await fetch("data/sessions.json");
+    try{
 
+        sessions = await fetchSessions();
 
-    sessions =
-    await response.json();
+        displaySessions();
 
+    }
 
-    displaySessions();
+    catch(error){
+
+        vocabularyContainer.innerHTML =
+        "<p>Error loading vocabulary.</p>";
+
+        console.error(error);
+
+    }
 
 }
 
@@ -93,32 +100,36 @@ async function openSession(sessionNumber){
 
 
 
-    const response =
-    await fetch(
-        "vocabulary/" + session.file
-    );
+    try{
+
+        const words =
+        await fetchWords(session.file);
 
 
-    const words =
-    await response.json();
+        words.forEach(word=>{
+
+            word.session = sessionNumber;
+
+            allWords.push(word);
+
+        });
 
 
+        displayWords(
+            words,
+            sessionBox
+        );
 
-    words.forEach(word=>{
+    }
 
-        word.session = sessionNumber;
+    catch(error){
 
-        allWords.push(word);
+        sessionBox.innerHTML =
+        "<p>Error loading words.</p>";
 
-    });
+        console.error(error);
 
-
-
-    displayWords(
-        words,
-        sessionBox
-    );
-
+    }
 
 }
 
@@ -229,23 +240,27 @@ if(allWords.length === 0){
 
     for(const session of sessions){
 
-        const response =
-        await fetch(
-        "vocabulary/" + session.file
-        );
+        try{
+
+            const words =
+            await fetchWords(session.file);
 
 
-        const words =
-        await response.json();
+            words.forEach(word=>{
 
+                word.session=session.session;
 
-        words.forEach(word=>{
+                allWords.push(word);
 
-            word.session=session.session;
+            });
 
-            allWords.push(word);
+        }
 
-        });
+        catch(error){
+
+            console.error(error);
+
+        }
 
     }
 

@@ -7,11 +7,22 @@ loadPractice();
 
 async function loadPractice(){
 
-    const response = await fetch("data/sessions.json");
+    try{
 
-    const sessions = await response.json();
+        const sessions = await fetchSessions();
 
-    displayPractice(sessions);
+        displayPractice(sessions);
+
+    }
+
+    catch(error){
+
+        practiceContainer.innerHTML =
+        "<p>Error loading sessions.</p>";
+
+        console.error(error);
+
+    }
 
 }
 
@@ -25,14 +36,15 @@ function displayPractice(sessions){
     practiceContainer.innerHTML = "";
 
 
+    const completed =
+    getCompletedSessions();
+
 
     // Find first incomplete session
 
     const nextSession =
     sessions.find(
-        // session => session.completed === false
-        session => !session.completed
-
+        session => !completed.includes(session.session)
     );
 
 
@@ -100,7 +112,7 @@ function displayPractice(sessions){
 
 
         const status =
-        session.completed
+        completed.includes(session.session)
         ?
         "✅ Completed"
         :

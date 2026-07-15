@@ -12,6 +12,10 @@ let selectedArticle = null;
 
 let mistakes = 0;
 
+let sessionNumber = 0;
+
+let settings = {};
+
 
 loadQuiz();
 
@@ -26,39 +30,44 @@ async function loadQuiz(){
     );
 
 
-    const sessionNumber =
+    sessionNumber =
     Number(params.get("session"));
 
 
 
-    const response =
-    await fetch("data/sessions.json");
+    try{
+
+        settings = await fetchSettings();
 
 
-    const sessions =
-    await response.json();
-
-
-
-    const session =
-    sessions.find(
-        s => s.session === sessionNumber
-    );
+        const sessions =
+        await fetchSessions();
 
 
 
-    const wordResponse =
-    await fetch(
-        "vocabulary/" + session.file
-    );
-
-
-    words =
-    await wordResponse.json();
+        const session =
+        sessions.find(
+            s => s.session === sessionNumber
+        );
 
 
 
-    showQuestion();
+        words =
+        await fetchWords(session.file);
+
+
+        showQuestion();
+
+    }
+
+    catch(error){
+
+        quizContainer.innerHTML =
+        "<p>Error loading quiz.</p>";
+
+        console.error(error);
+
+    }
 
 }
 
@@ -114,7 +123,7 @@ function showQuestion(){
     }
 
 
-    <button onclick="checkAnswer()">
+    <button id="next-btn" onclick="checkAnswer()">
     Next
     </button>
 
@@ -146,7 +155,7 @@ function createMeaningOptions(word){
 
 
 
-    while(options.length < 4){
+    while(options.length < settings.meaning_options && options.length < words.length){
 
         const randomWord =
         words[
@@ -177,11 +186,22 @@ function createMeaningOptions(word){
 
         <button 
         class="option"
-        onclick="selectMeaning('${option}', this)">>
+        data-value="${option}">
         ${option}
         </button>
 
         `;
+
+    });
+
+
+    container.querySelectorAll("button").forEach(btn=>{
+
+        btn.addEventListener("click", function(){
+
+            selectMeaning(this.dataset.value, this);
+
+        });
 
     });
 
@@ -218,12 +238,23 @@ function createArticleOptions(word){
 
         <button 
         class="option"
-        onclick="selectArticle('${article}', this)">
+        data-value="${article}">
         ${article}
         </button>
 
         `;
 
+
+    });
+
+
+    container.querySelectorAll("button").forEach(btn=>{
+
+        btn.addEventListener("click", function(){
+
+            selectArticle(this.dataset.value, this);
+
+        });
 
     });
 
@@ -239,15 +270,14 @@ function selectMeaning(answer, button){
     document
     .querySelectorAll("#meaning-options button")
     .forEach(btn=>{
-        btn.style.fontWeight = "normal";
+        btn.classList.remove("selected");
     });
 
 
-    button.style.fontWeight = "bold";
+    button.classList.add("selected");
 
 
 }
-
 
 
 function selectArticle(answer, button){
@@ -259,11 +289,12 @@ function selectArticle(answer, button){
     document
     .querySelectorAll("#article-options button")
     .forEach(btn=>{
-        btn.style.fontWeight = "normal";
+        btn.classList.remove("selected");
     });
 
 
-    button.style.fontWeight = "bold";
+    button.classList.add("selected");
+
 
 }
 
@@ -272,6 +303,25 @@ function checkAnswer(){
 
     const word =
     words[currentIndex];
+
+
+
+    if(!selectedMeaning){
+
+        alert("Please select a meaning!");
+
+        return;
+
+    }
+
+
+    if(word.article && !selectedArticle){
+
+        alert("Please select an article!");
+
+        return;
+
+    }
 
 
     let correct = true;
@@ -285,13 +335,11 @@ function checkAnswer(){
     }
 
 
-
     if(word.article && selectedArticle !== word.article){
 
         correct = false;
 
     }
-
 
 
     if(!correct){
@@ -301,33 +349,101 @@ function checkAnswer(){
     }
 
 
+    showFeedback(correct, word);
 
-    currentIndex++;
-
-
-
-    selectedMeaning = null;
-
-    selectedArticle = null;
+}
 
 
+function showFeedback(correct, word){
 
-    if(currentIndex < words.length){
+    const nextBtn =
+    document.getElementById("next-btn");
 
-        showQuestion();
+
+    nextBtn.style.display = "none";
+
+
+    const feedback =
+    document.createElement("div");
+
+
+    feedback.className =
+    correct ? "feedback-correct" : "feedback-wrong";
+
+
+    let html = correct
+    ? "<p>✓ Correct!</p>"
+    : "<p>✗ Wrong!</p>";
+
+
+    if(!correct){
+
+        html += "<p><strong>Correct answers:</strong></p>";
+
+
+        html += "<p>Meaning: " + word.meaning + "</p>";
+
+
+        if(word.article){
+
+            html += "<p>Article: " + word.article + "</p>";
+
+        }
 
     }
 
-    else{
 
-        showResult();
+    feedback.innerHTML = html;
 
-    }
 
+    const continueBtn =
+    document.createElement("button");
+
+
+    continueBtn.textContent = "Continue";
+
+
+    continueBtn.onclick = function(){
+
+
+        currentIndex++;
+
+
+        selectedMeaning = null;
+
+        selectedArticle = null;
+
+
+        if(currentIndex < words.length){
+
+            showQuestion();
+
+        }
+
+        else{
+
+            showResult();
+
+        }
+
+    };
+
+
+    feedback.appendChild(continueBtn);
+
+
+    quizContainer.appendChild(feedback);
 
 }
 
 function showResult(){
+
+
+    if(mistakes === 0){
+
+        saveCompletedSession(sessionNumber);
+
+    }
 
 
     quizContainer.innerHTML = `
@@ -354,7 +470,44 @@ function showResult(){
     }
 
 
+    <div class="quiz-nav">
+
+        <button onclick="retryQuiz()">
+        Retry
+        </button>
+
+
+        <button onclick="goToPractice()">
+        Back to Practice
+        </button>
+
+    </div>
+
+
     `;
 
+
+}
+
+
+function retryQuiz(){
+
+    currentIndex = 0;
+
+    mistakes = 0;
+
+    selectedMeaning = null;
+
+    selectedArticle = null;
+
+
+    showQuestion();
+
+}
+
+
+function goToPractice(){
+
+    window.location.href = "practice.html";
 
 }

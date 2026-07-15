@@ -1,0 +1,167 @@
+[
+    {
+        "id": 1,
+        "word": "Auto",
+        "type": "noun",
+        "article": "das",
+        "plural": "Autos",
+        "meaning": "car",
+        "example": "Ich fahre mit dem Auto zur Arbeit."
+    },
+    {
+        "id": 2,
+        "word": "Hund",
+        "type": "noun",
+        "article": "der",
+        "plural": "Hunde",
+        "meaning": "dog",
+        "example": "Der Hund spielt im Garten."
+    },
+    {
+        "id": 3,
+        "word": "Katze",
+        "type": "noun",
+        "article": "die",
+        "plural": "Katzen",
+        "meaning": "cat",
+        "example": "Die Katze schläft auf dem Sofa."
+    },
+    {
+        "id": 4,
+        "word": "Schule",
+        "type": "noun",
+        "article": "die",
+        "plural": "Schulen",
+        "meaning": "school",
+        "example": "Die Kinder gehen in die Schule."
+    },
+    {
+        "id": 5,
+        "word": "Freund",
+        "type": "noun",
+        "article": "der",
+        "plural": "Freunde",
+        "meaning": "friend",
+        "example": "Er ist mein bester Freund."
+    },
+    {
+        "id": 6,
+        "word": "Familie",
+        "type": "noun",
+        "article": "die",
+        "plural": "Familien",
+        "meaning": "family",
+        "example": "Meine Familie ist groß."
+    },
+    {
+        "id": 7,
+        "word": "Garten",
+        "type": "noun",
+        "article": "der",
+        "plural": "Gärten",
+        "meaning": "garden",
+        "example": "Der Garten ist voller Blumen."
+    },
+    {
+        "id": 8,
+        "word": "Morgen",
+        "type": "noun",
+        "article": "der",
+        "plural": "Morgen",
+        "meaning": "morning",
+        "example": "Am Morgen trinke ich Kaffee."
+    },
+    {
+        "id": 9,
+        "word": "Abend",
+        "type": "noun",
+        "article": "der",
+        "plural": "Abende",
+        "meaning": "evening",
+        "example": "Am Abend sehe ich fern."
+    },
+    {
+        "id": 10,
+        "word": "Weg",
+        "type": "noun",
+        "article": "der",
+        "plural": "Wege",
+        "meaning": "way / path",
+        "example": "Der Weg zur Schule ist kurz."
+    },
+    {
+        "id": 11,
+        "word": "essen",
+        "type": "verb",
+        "meaning": "to eat",
+        "partizip2": "gegessen",
+        "example": "Wir essen zu Mittag."
+    },
+    {
+        "id": 12,
+        "word": "schlafen",
+        "type": "verb",
+        "meaning": "to sleep",
+        "partizip2": "geschlafen",
+        "example": "Ich habe gut geschlafen."
+    },
+    {
+        "id": 13,
+        "word": "fahren",
+        "type": "verb",
+        "meaning": "to drive / to travel",
+        "partizip2": "gefahren",
+        "example": "Wir sind nach Berlin gefahren."
+    },
+    {
+        "id": 14,
+        "word": "spielen",
+        "type": "verb",
+        "meaning": "to play",
+        "partizip2": "gespielt",
+        "example": "Die Kinder haben im Park gespielt."
+    },
+    {
+        "id": 15,
+        "word": "helfen",
+        "type": "verb",
+        "meaning": "to help",
+        "partizip2": "geholfen",
+        "example": "Kannst du mir helfen?"
+    },
+    {
+        "id": 16,
+        "word": "schön",
+        "type": "adjective",
+        "meaning": "beautiful / nice",
+        "example": "Der Tag ist sehr schön."
+    },
+    {
+        "id": 17,
+        "word": "schnell",
+        "type": "adjective",
+        "meaning": "fast / quick",
+        "example": "Der Hund ist sehr schnell."
+    },
+    {
+        "id": 18,
+        "word": "langsam",
+        "type": "adjective",
+        "meaning": "slow",
+        "example": "Die Schildkröte ist langsam."
+    },
+    {
+        "id": 19,
+        "word": "warm",
+        "type": "adjective",
+        "meaning": "warm",
+        "example": "Das Wasser ist warm."
+    },
+    {
+        "id": 20,
+        "word": "kalt",
+        "type": "adjective",
+        "meaning": "cold",
+        "example": "Im Winter ist es kalt."
+    }
+]

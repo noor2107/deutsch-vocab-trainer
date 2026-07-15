@@ -2,13 +2,11 @@
     {
         "session": 1,
         "file": "session_001.json",
-        "word_count": 20,
-        "completed": false
+        "word_count": 20
     },
     {
         "session": 2,
         "file": "session_002.json",
-        "word_count": 20,
-        "completed": false
+        "word_count": 20
     }
 ]
