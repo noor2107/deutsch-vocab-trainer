@@ -7,11 +7,45 @@ loadPractice();
 
 async function loadPractice(){
 
+    const user = await waitForAuth();
+
+    if(!user){
+
+        practiceContainer.innerHTML = `
+
+        <div class="login-prompt">
+
+            <h2>
+            Login Required
+            </h2>
+
+            <p>
+            Please login to track your progress.
+            </p>
+
+            <button onclick="login()">
+            Login with Google
+            </button>
+
+        </div>
+
+        `;
+
+        return;
+
+    }
+
+
     try{
 
         const sessions = await fetchSessions();
 
-        displayPractice(sessions);
+        const completed = await getCompletedSessions();
+
+        const mistakes = await getMistakes();
+
+
+        displayPractice(sessions, completed, mistakes);
 
     }
 
@@ -30,14 +64,20 @@ async function loadPractice(){
 
 
 
-function displayPractice(sessions){
+function displayPractice(sessions, completed, mistakes){
 
 
     practiceContainer.innerHTML = "";
 
 
-    const completed =
-    getCompletedSessions();
+    // Count mistakes per session
+    const mistakesPerSession = {};
+    mistakes.forEach(function(m){
+        if(!mistakesPerSession[m.sessionNumber]){
+            mistakesPerSession[m.sessionNumber] = 0;
+        }
+        mistakesPerSession[m.sessionNumber]++;
+    });
 
 
     // Find first incomplete session
@@ -50,6 +90,10 @@ function displayPractice(sessions){
 
 
     if(nextSession){
+
+
+        const mistakeCount =
+        mistakesPerSession[nextSession.session] || 0;
 
 
         practiceContainer.innerHTML += `
@@ -68,6 +112,7 @@ function displayPractice(sessions){
 
             <p>
             ❌ Not completed
+            ${mistakeCount > 0 ? "(" + mistakeCount + " mistakes)" : ""}
             </p>
 
 
@@ -111,13 +156,20 @@ function displayPractice(sessions){
     sessions.forEach(session=>{
 
 
+        const isCompleted =
+        completed.includes(session.session);
+
+
         const status =
-        completed.includes(session.session)
+        isCompleted
         ?
         "✅ Completed"
         :
         "❌ Not completed";
 
+
+        const mistakeCount =
+        mistakesPerSession[session.session] || 0;
 
 
         sessionList.innerHTML += `
@@ -139,6 +191,17 @@ function displayPractice(sessions){
             <p>
             ${status}
             </p>
+
+
+            ${
+            !isCompleted && mistakeCount > 0
+            ?
+            `<p class="mistake-count">
+            ${mistakeCount} mistakes
+            </p>`
+            :
+            ""
+            }
 
 
             <button onclick="openSession(${session.session})">

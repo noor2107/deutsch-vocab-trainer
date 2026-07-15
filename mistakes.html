@@ -2,55 +2,63 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Deutsch Vocab Trainer</title>
+<meta charset="UTF-8">
 
-    <link rel="stylesheet" href="css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mistakes</title>
+
+<link rel="stylesheet" href="css/style.css">
+
 </head>
 
 
 <body>
 
-    <header>
 
-    <h1>🇩🇪 Deutsch Vocab Trainer</h1>
+<header>
 
-    <nav>
+<h1>
+🇩🇪 Deutsch Vocab Trainer
+</h1>
 
-        <a href="index.html" class="active">
+
+<nav>
+
+<a href="index.html">
             Notebook
         </a>
+
 
         <a href="practice.html">
             Practice
         </a>
 
-        <a href="mistakes.html">
+
+        <a href="mistakes.html" class="active">
             Mistakes
         </a>
 
         <div id="auth-container"></div>
 
-    </nav>
+</nav>
+
 
 </header>
 
 
+
 <main>
 
-    <input
-        type="text"
-        id="search"
-        placeholder="Search vocabulary..."
-    >
+<div id="mistakes">
 
-    <div id="vocabulary">
-        Loading vocabulary...
-    </div>
+Loading mistakes...
+
+</div>
 
 </main>
+
 
 
 <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
@@ -60,7 +68,8 @@
 <script src="js/auth.js"></script>
 <script src="js/utils.js"></script>
 
-<script src="js/notebook.js"></script>
+<script src="js/mistakes.js"></script>
+
 
 </body>
 

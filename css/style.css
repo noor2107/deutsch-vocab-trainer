@@ -82,6 +82,8 @@ nav{
 
     margin-top:15px;
 
+    align-items:center;
+
 }
 
 
@@ -266,5 +268,281 @@ button {
     padding:10px 20px;
 
     font-size:16px;
+
+}
+
+
+/* Auth styles */
+
+#auth-container{
+
+    margin-left:auto;
+
+}
+
+
+.login-btn {
+
+    background: #4285F4;
+
+    color: white;
+
+    border: none;
+
+    padding: 8px 16px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+}
+
+
+.login-btn:hover {
+
+    background: #3367D6;
+
+}
+
+
+.user-info {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+.user-avatar {
+
+    width: 30px;
+
+    height: 30px;
+
+    border-radius: 50%;
+
+}
+
+
+.user-name {
+
+    font-size: 14px;
+
+}
+
+
+.logout-btn {
+
+    background: #eee;
+
+    border: 1px solid #ddd;
+
+    padding: 6px 12px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+}
+
+
+.logout-btn:hover {
+
+    background: #ddd;
+
+}
+
+
+/* Login prompt */
+
+.login-prompt {
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    border: 2px solid #ddd;
+
+    border-radius: 10px;
+
+    margin-top: 20px;
+
+}
+
+
+.login-prompt h2 {
+
+    margin-bottom: 10px;
+
+}
+
+
+.login-prompt p {
+
+    margin-bottom: 20px;
+
+    color: #666;
+
+}
+
+
+/* Mistakes page */
+
+.mistake-session {
+
+    margin: 10px 0;
+
+}
+
+
+.mistakes-list {
+
+    padding: 10px;
+
+}
+
+
+.mistake-card {
+
+    border: 1px solid #f8d7da;
+
+    background: #fff5f5;
+
+    padding: 12px;
+
+    margin: 8px 0;
+
+    border-radius: 8px;
+
+}
+
+
+.mistake-word {
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+
+}
+
+
+.mistake-article {
+
+    color: #666;
+
+}
+
+
+.mistake-detail {
+
+    font-size: 14px;
+
+}
+
+
+.wrong-answer {
+
+    color: #dc3545;
+
+    text-decoration: line-through;
+
+}
+
+
+.correct-answer {
+
+    color: #28a745;
+
+    font-weight: bold;
+
+}
+
+
+.clear-mistakes-btn {
+
+    margin-top: 10px;
+
+    margin-bottom: 20px;
+
+    background: #f8d7da;
+
+    border: 1px solid #dc3545;
+
+    color: #dc3545;
+
+    padding: 8px 16px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+}
+
+
+.clear-mistakes-btn:hover {
+
+    background: #f1b0b7;
+
+}
+
+
+.empty-state {
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+}
+
+
+.empty-state p {
+
+    color: #666;
+
+    margin-bottom: 20px;
+
+}
+
+
+.start-practicing {
+
+    display: inline-block;
+
+    background: #4CAF50;
+
+    color: white;
+
+    padding: 10px 20px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+}
+
+
+.start-practicing:hover {
+
+    background: #45a049;
+
+}
+
+
+.mistake-count {
+
+    color: #dc3545;
+
+    font-weight: bold;
+
+    font-size: 14px;
 
 }

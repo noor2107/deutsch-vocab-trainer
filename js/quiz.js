@@ -16,6 +16,8 @@ let sessionNumber = 0;
 
 let settings = {};
 
+let sessionMistakes = [];
+
 
 loadQuiz();
 
@@ -32,6 +34,35 @@ async function loadQuiz(){
 
     sessionNumber =
     Number(params.get("session"));
+
+
+    const user = await waitForAuth();
+
+    if(!user){
+
+        quizContainer.innerHTML = `
+
+        <div class="login-prompt">
+
+            <h2>
+            Login Required
+            </h2>
+
+            <p>
+            Please login to take quizzes.
+            </p>
+
+            <button onclick="login()">
+            Login with Google
+            </button>
+
+        </div>
+
+        `;
+
+        return;
+
+    }
 
 
 
@@ -332,12 +363,36 @@ function checkAnswer(){
 
         correct = false;
 
+        sessionMistakes.push({
+
+            word: word,
+
+            userAnswer: selectedMeaning,
+
+            correctAnswer: word.meaning,
+
+            questionType: "meaning"
+
+        });
+
     }
 
 
     if(word.article && selectedArticle !== word.article){
 
         correct = false;
+
+        sessionMistakes.push({
+
+            word: word,
+
+            userAnswer: selectedArticle,
+
+            correctAnswer: word.article,
+
+            questionType: "article"
+
+        });
 
     }
 
@@ -422,7 +477,8 @@ function showFeedback(correct, word){
 
         else{
 
-            showResult();
+            showResult()
+            .catch(console.error);
 
         }
 
@@ -436,12 +492,46 @@ function showFeedback(correct, word){
 
 }
 
-function showResult(){
+async function showResult(){
 
 
-    if(mistakes === 0){
+    try{
 
-        saveCompletedSession(sessionNumber);
+        if(mistakes === 0){
+
+            await saveCompletedSession(sessionNumber);
+
+            await clearSessionMistakes(sessionNumber);
+
+        }
+
+        else{
+
+            for(const m of sessionMistakes){
+
+                await logMistake(
+
+                    sessionNumber,
+
+                    m.word,
+
+                    m.userAnswer,
+
+                    m.correctAnswer,
+
+                    m.questionType
+
+                );
+
+            }
+
+        }
+
+    }
+
+    catch(error){
+
+        console.error("Error saving results:", error);
 
     }
 
@@ -499,6 +589,8 @@ function retryQuiz(){
     selectedMeaning = null;
 
     selectedArticle = null;
+
+    sessionMistakes = [];
 
 
     showQuestion();

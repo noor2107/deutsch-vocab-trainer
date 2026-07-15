@@ -22,6 +22,34 @@ async function loadSession(){
     );
 
 
+    const user = await waitForAuth();
+
+    if(!user){
+
+        sessionContainer.innerHTML = `
+
+        <div class="login-prompt">
+
+            <h2>
+            Login Required
+            </h2>
+
+            <p>
+            Please login to start a session.
+            </p>
+
+            <button onclick="login()">
+            Login with Google
+            </button>
+
+        </div>
+
+        `;
+
+        return;
+
+    }
+
 
     try{
 
