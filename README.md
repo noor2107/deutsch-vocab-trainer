@@ -121,3 +121,5 @@ Edit `data/settings.json`:
 ## Progress Tracking
 
 Progress is saved in browser localStorage. To reset progress, clear localStorage for this site.
+
+**Disclaimer:** This project is built with ChatGPT and OpenCode (Big Pickle OpenCode Zen)
