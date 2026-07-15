@@ -1,29 +1,54 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="de">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Deutsch Vocab Trainer</title>
 
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 
 <body>
 
-    <h1>Deutsch Vocab Trainer</h1>
+    <header>
+
+    <h1>🇩🇪 Deutsch Vocab Trainer</h1>
+
+    <nav>
+
+        <a href="index.html" class="active">
+            Notebook
+        </a>
+
+        <a href="practice.html">
+            Practice
+        </a>
+
+    </nav>
+
+</header>
 
 
-    <h2 id="word">
-        Loading...
-    </h2>
+<main>
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Search vocabulary..."
+    >
+
+    <div id="vocabulary">
+        Loading vocabulary...
+    </div>
+
+</main>
 
 
-    <script src="script.js"></script>
+<script src="js/notebook.js"></script>
 
 </body>
-
 
 </html>

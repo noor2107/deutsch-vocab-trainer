@@ -1,84 +1,168 @@
 [
     {
+        "id": 1,
+        "word": "Haus",
+        "type": "noun",
+        "article": "das",
+        "plural": "Häuser",
+        "meaning": "house",
+        "example": "Das Haus ist groß."
+    },
+    {
+        "id": 2,
+        "word": "Wohnung",
+        "type": "noun",
+        "article": "die",
+        "plural": "Wohnungen",
+        "meaning": "apartment",
+        "example": "Ich wohne in einer Wohnung."
+    },
+    {
+        "id": 3,
         "word": "Tisch",
         "type": "noun",
         "article": "der",
         "plural": "Tische",
         "meaning": "table",
-        "example": "Der Tisch ist groß."
+        "example": "Das Buch liegt auf dem Tisch."
     },
-
     {
-        "word": "Lampe",
+        "id": 4,
+        "word": "Stuhl",
         "type": "noun",
-        "article": "die",
-        "plural": "Lampen",
-        "meaning": "lamp",
-        "example": "Die Lampe ist hell."
+        "article": "der",
+        "plural": "Stühle",
+        "meaning": "chair",
+        "example": "Der Stuhl ist bequem."
     },
-
     {
+        "id": 5,
         "word": "Buch",
         "type": "noun",
         "article": "das",
         "plural": "Bücher",
         "meaning": "book",
-        "example": "Das Buch liegt auf dem Tisch."
+        "example": "Ich lese ein Buch."
     },
-
     {
-        "word": "Umgebung",
+        "id": 6,
+        "word": "Zeit",
         "type": "noun",
         "article": "die",
-        "plural": "Umgebungen",
-        "meaning": "environment / surroundings",
-        "example": "Die Umgebung ist sehr schön."
+        "plural": "Zeiten",
+        "meaning": "time",
+        "example": "Ich habe keine Zeit."
     },
-
     {
-        "word": "Entscheidung",
+        "id": 7,
+        "word": "Arbeit",
         "type": "noun",
         "article": "die",
-        "plural": "Entscheidungen",
-        "meaning": "decision",
-        "example": "Das war eine wichtige Entscheidung."
+        "plural": "Arbeiten",
+        "meaning": "work",
+        "example": "Ich gehe zur Arbeit."
     },
-
     {
+        "id": 8,
+        "word": "Tag",
+        "type": "noun",
+        "article": "der",
+        "plural": "Tage",
+        "meaning": "day",
+        "example": "Heute ist ein schöner Tag."
+    },
+    {
+        "id": 9,
+        "word": "Wasser",
+        "type": "noun",
+        "article": "das",
+        "plural": "Wasser",
+        "meaning": "water",
+        "example": "Ich trinke Wasser."
+    },
+    {
+        "id": 10,
+        "word": "Essen",
+        "type": "noun",
+        "article": "das",
+        "plural": "Essen",
+        "meaning": "food",
+        "example": "Das Essen ist lecker."
+    },
+    {
+        "id": 11,
         "word": "gehen",
         "type": "verb",
         "meaning": "to go",
         "partizip2": "gegangen",
         "example": "Ich bin nach Hause gegangen."
     },
-
     {
+        "id": 12,
+        "word": "kommen",
+        "type": "verb",
+        "meaning": "to come",
+        "partizip2": "gekommen",
+        "example": "Er ist spät gekommen."
+    },
+    {
+        "id": 13,
         "word": "machen",
         "type": "verb",
-        "meaning": "to do / to make",
+        "meaning": "to do / make",
         "partizip2": "gemacht",
-        "example": "Ich habe meine Hausaufgaben gemacht."
+        "example": "Ich habe die Aufgabe gemacht."
     },
-
     {
-        "word": "sehen",
+        "id": 14,
+        "word": "lernen",
         "type": "verb",
-        "meaning": "to see",
-        "partizip2": "gesehen",
-        "example": "Ich habe einen Film gesehen."
+        "meaning": "to learn",
+        "partizip2": "gelernt",
+        "example": "Ich habe Deutsch gelernt."
     },
-
     {
-        "word": "wichtig",
-        "type": "adjective",
-        "meaning": "important",
-        "example": "Das ist sehr wichtig."
+        "id": 15,
+        "word": "lesen",
+        "type": "verb",
+        "meaning": "to read",
+        "partizip2": "gelesen",
+        "example": "Ich habe das Buch gelesen."
     },
-
     {
-        "word": "schnell",
+        "id": 16,
+        "word": "sprechen",
+        "type": "verb",
+        "meaning": "to speak",
+        "partizip2": "gesprochen",
+        "example": "Ich habe Deutsch gesprochen."
+    },
+    {
+        "id": 17,
+        "word": "gut",
         "type": "adjective",
-        "meaning": "fast",
-        "example": "Das Auto ist schnell."
+        "meaning": "good",
+        "example": "Das ist gut."
+    },
+    {
+        "id": 18,
+        "word": "klein",
+        "type": "adjective",
+        "meaning": "small",
+        "example": "Das Zimmer ist klein."
+    },
+    {
+        "id": 19,
+        "word": "groß",
+        "type": "adjective",
+        "meaning": "big",
+        "example": "Das Haus ist groß."
+    },
+    {
+        "id": 20,
+        "word": "neu",
+        "type": "adjective",
+        "meaning": "new",
+        "example": "Das Auto ist neu."
     }
 ]
