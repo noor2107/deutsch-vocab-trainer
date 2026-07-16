@@ -83,7 +83,7 @@ async function openSession(sessionNumber){
     );
 
 
-    if(sessionBox.innerHTML !== ""){
+    if(sessionBox.innerHTML.trim() !== ""){
 
         sessionBox.innerHTML = "";
 
@@ -169,23 +169,7 @@ function displayWords(words,container){
         </p>
 
 
-        ${
-        word.partizip2 ?
-        `
-        <p>
-        <strong>Partizip II:</strong>
-        ${word.partizip2}
-        </p>
-        `
-        :
-        ""
-        }
-
-
-        <p>
-        <strong>Example:</strong>
-        ${word.example}
-        </p>
+        ${learningDetailsHtml(word, false)}
 
 
         </div>

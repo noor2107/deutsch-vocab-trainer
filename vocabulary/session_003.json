@@ -1,0 +1,246 @@
+[
+    {
+        "id": 1,
+        "word": "Stadtzentrum",
+        "type": "noun",
+        "article": "das",
+        "plural": "Stadtzentren",
+        "meaning": "city centre",
+        "examples": [
+            "Im Stadtzentrum gibt es viele Geschäfte.",
+            "Wir fahren mit dem Bus ins Stadtzentrum."
+        ]
+    },
+    {
+        "id": 2,
+        "word": "Stadtrand",
+        "type": "noun",
+        "article": "der",
+        "plural": "Stadtränder",
+        "meaning": "outskirts of a city",
+        "examples": [
+            "Meine Familie wohnt am Stadtrand.",
+            "Am Stadtrand ist es ruhiger als im Zentrum."
+        ]
+    },
+    {
+        "id": 3,
+        "word": "Geschäft",
+        "type": "noun",
+        "article": "das",
+        "plural": "Geschäfte",
+        "meaning": "shop / business",
+        "examples": [
+            "Das Geschäft öffnet um neun Uhr.",
+            "Ich kaufe das Brot in einem kleinen Geschäft."
+        ]
+    },
+    {
+        "id": 4,
+        "word": "Dachgeschoss",
+        "type": "noun",
+        "article": "das",
+        "plural": "Dachgeschosse",
+        "meaning": "top floor / attic floor",
+        "examples": [
+            "Unsere Wohnung liegt im Dachgeschoss.",
+            "Im Dachgeschoss ist es im Sommer sehr warm."
+        ]
+    },
+    {
+        "id": 5,
+        "word": "Erdgeschoss",
+        "type": "noun",
+        "article": "das",
+        "plural": "Erdgeschosse",
+        "meaning": "ground floor",
+        "examples": [
+            "Der Supermarkt ist im Erdgeschoss.",
+            "Meine Großeltern wohnen im Erdgeschoss."
+        ]
+    },
+    {
+        "id": 6,
+        "word": "Keller",
+        "type": "noun",
+        "article": "der",
+        "plural": "Keller",
+        "meaning": "cellar / basement",
+        "examples": [
+            "Die Fahrräder stehen im Keller.",
+            "Im Keller ist es dunkel und kühl."
+        ]
+    },
+    {
+        "id": 7,
+        "word": "Stock",
+        "type": "noun",
+        "article": "der",
+        "plural": "Stockwerke",
+        "meaning": "floor / storey",
+        "examples": [
+            "Wir wohnen im dritten Stock.",
+            "Der Aufzug fährt bis zum fünften Stock."
+        ]
+    },
+    {
+        "id": 8,
+        "word": "Etage",
+        "type": "noun",
+        "article": "die",
+        "plural": "Etagen",
+        "meaning": "floor / level of a building",
+        "examples": [
+            "Sein Büro ist in der zweiten Etage.",
+            "Auf jeder Etage gibt es eine Küche."
+        ]
+    },
+    {
+        "id": 9,
+        "word": "umziehen",
+        "type": "verb",
+        "meaning": "to move house",
+        "partizip2": "umgezogen",
+        "auxiliary": "sein",
+        "note": "Separable verb: Ich ziehe um.",
+        "examples": [
+            "Wir ziehen nächsten Monat nach Köln um.",
+            "Meine Schwester ist in eine größere Wohnung umgezogen."
+        ]
+    },
+    {
+        "id": 10,
+        "word": "Umzug",
+        "type": "noun",
+        "article": "der",
+        "plural": "Umzüge",
+        "meaning": "house move",
+        "examples": [
+            "Der Umzug war sehr anstrengend.",
+            "Unsere Freunde helfen uns beim Umzug."
+        ]
+    },
+    {
+        "id": 11,
+        "word": "Mietshaus",
+        "type": "noun",
+        "article": "das",
+        "plural": "Mietshäuser",
+        "meaning": "apartment building with rented homes",
+        "examples": [
+            "Sie lebt in einem alten Mietshaus.",
+            "Das Mietshaus hat sechs Wohnungen."
+        ]
+    },
+    {
+        "id": 12,
+        "word": "Dachwohnung",
+        "type": "noun",
+        "article": "die",
+        "plural": "Dachwohnungen",
+        "meaning": "attic apartment",
+        "examples": [
+            "Die Dachwohnung hat einen schönen Balkon.",
+            "Im Winter ist ihre Dachwohnung gemütlich."
+        ]
+    },
+    {
+        "id": 13,
+        "word": "Ecke",
+        "type": "noun",
+        "article": "die",
+        "plural": "Ecken",
+        "meaning": "corner",
+        "examples": [
+            "Die Apotheke ist gleich um die Ecke.",
+            "In der Ecke steht ein kleiner Tisch."
+        ]
+    },
+    {
+        "id": 14,
+        "word": "ausziehen",
+        "type": "verb",
+        "meaning": "to move out",
+        "partizip2": "ausgezogen",
+        "auxiliary": "sein",
+        "note": "Separable verb: Er zieht aus. It can also mean to take off clothes.",
+        "examples": [
+            "Ich ziehe Ende Juni aus der Wohnung aus.",
+            "Unser Nachbar ist gestern ausgezogen."
+        ]
+    },
+    {
+        "id": 15,
+        "word": "günstig",
+        "type": "adjective",
+        "meaning": "inexpensive / favourable",
+        "comparative": "günstiger",
+        "superlative": "am günstigsten",
+        "examples": [
+            "Die Wohnung ist klein, aber günstig.",
+            "Mit dem Bus ist die Fahrt günstiger."
+        ]
+    },
+    {
+        "id": 16,
+        "word": "Dach",
+        "type": "noun",
+        "article": "das",
+        "plural": "Dächer",
+        "meaning": "roof",
+        "examples": [
+            "Auf dem Dach liegt Schnee.",
+            "Das Haus hat ein rotes Dach."
+        ]
+    },
+    {
+        "id": 17,
+        "word": "Viertel",
+        "type": "noun",
+        "article": "das",
+        "plural": "Viertel",
+        "meaning": "neighbourhood / quarter",
+        "examples": [
+            "Wir wohnen in einem ruhigen Viertel.",
+            "In diesem Viertel gibt es viele Cafés."
+        ]
+    },
+    {
+        "id": 18,
+        "word": "Mieter",
+        "type": "noun",
+        "article": "der",
+        "plural": "Mieter",
+        "meaning": "tenant",
+        "note": "The feminine form is die Mieterin.",
+        "examples": [
+            "Der Mieter bezahlt jeden Monat die Miete.",
+            "Alle Mieter benutzen den gleichen Eingang."
+        ]
+    },
+    {
+        "id": 19,
+        "word": "einziehen",
+        "type": "verb",
+        "meaning": "to move in",
+        "partizip2": "eingezogen",
+        "auxiliary": "sein",
+        "note": "Separable verb: Wir ziehen ein.",
+        "examples": [
+            "Am Samstag ziehen wir in die neue Wohnung ein.",
+            "Die neuen Mieter sind gestern eingezogen."
+        ]
+    },
+    {
+        "id": 20,
+        "word": "Platz",
+        "type": "noun",
+        "article": "der",
+        "plural": "Plätze",
+        "meaning": "space / place",
+        "examples": [
+            "In der Küche ist wenig Platz.",
+            "Vor dem Rathaus liegt ein großer Platz."
+        ]
+    }
+]

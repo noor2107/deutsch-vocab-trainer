@@ -72,11 +72,14 @@ function displayPractice(sessions, completed, mistakes){
 
     // Count mistakes per session
     const mistakesPerSession = {};
+    const mistakeWords = new Set();
     mistakes.forEach(function(m){
-        if(!mistakesPerSession[m.sessionNumber]){
-            mistakesPerSession[m.sessionNumber] = 0;
-        }
-        mistakesPerSession[m.sessionNumber]++;
+        mistakeWords.add(m.sessionNumber + ":" + (m.wordId || m.word));
+    });
+    mistakeWords.forEach(function(key){
+        const sessionNumber = key.split(":")[0];
+        mistakesPerSession[sessionNumber] =
+        (mistakesPerSession[sessionNumber] || 0) + 1;
     });
 
 

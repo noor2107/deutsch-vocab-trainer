@@ -1,0 +1,241 @@
+[
+    {
+        "id": 1,
+        "word": "abschneiden",
+        "type": "verb",
+        "meaning": "to cut off / perform",
+        "partizip2": "abgeschnitten",
+        "auxiliary": "haben",
+        "note": "Separable verb. In einer Prüfung gut abschneiden means to perform well.",
+        "examples": [
+            "Sie schneidet ein Stück Brot ab.",
+            "Er hat bei der Prüfung gut abgeschnitten."
+        ]
+    },
+    {
+        "id": 2,
+        "word": "umsteigen",
+        "type": "verb",
+        "meaning": "to change trains or buses",
+        "partizip2": "umgestiegen",
+        "auxiliary": "sein",
+        "note": "Separable verb: Wir steigen in Köln um.",
+        "examples": [
+            "In Köln müssen wir umsteigen.",
+            "Ich bin am Hauptbahnhof in den Bus umgestiegen."
+        ]
+    },
+    {
+        "id": 3,
+        "word": "verpassen",
+        "type": "verb",
+        "meaning": "to miss",
+        "partizip2": "verpasst",
+        "auxiliary": "haben",
+        "examples": [
+            "Beeil dich, sonst verpasst du den Bus.",
+            "Ich habe den Anfang des Films verpasst."
+        ]
+    },
+    {
+        "id": 4,
+        "word": "verlieren",
+        "type": "verb",
+        "meaning": "to lose",
+        "partizip2": "verloren",
+        "auxiliary": "haben",
+        "examples": [
+            "Ich möchte meinen Schlüssel nicht verlieren.",
+            "Sie hat ihre Geldbörse verloren."
+        ]
+    },
+    {
+        "id": 5,
+        "word": "komisch",
+        "type": "adjective",
+        "meaning": "strange / funny",
+        "comparative": "komischer",
+        "superlative": "am komischsten",
+        "examples": [
+            "Das Geräusch klingt komisch.",
+            "Er hat eine komische Geschichte erzählt."
+        ]
+    },
+    {
+        "id": 6,
+        "word": "fast",
+        "type": "adverb",
+        "meaning": "almost",
+        "examples": [
+            "Ich habe den Zug fast verpasst.",
+            "Die Flasche ist fast leer."
+        ]
+    },
+    {
+        "id": 7,
+        "word": "reichen",
+        "type": "verb",
+        "meaning": "to be enough / hand something",
+        "partizip2": "gereicht",
+        "auxiliary": "haben",
+        "examples": [
+            "Das Geld reicht nicht für ein Taxi.",
+            "Kannst du mir bitte das Salz reichen?"
+        ]
+    },
+    {
+        "id": 8,
+        "word": "ziehen",
+        "type": "verb",
+        "meaning": "to pull / move",
+        "partizip2": "gezogen",
+        "auxiliary": "haben / sein",
+        "note": "Use haben for pulling and sein for moving to another place.",
+        "examples": [
+            "Bitte zieh nicht an der Tür.",
+            "Meine Freunde sind nach Hamburg gezogen."
+        ]
+    },
+    {
+        "id": 9,
+        "word": "selten",
+        "type": "adverb",
+        "meaning": "rarely",
+        "comparative": "seltener",
+        "superlative": "am seltensten",
+        "examples": [
+            "Ich fahre selten mit dem Taxi.",
+            "So eine Panne passiert nur selten."
+        ]
+    },
+    {
+        "id": 10,
+        "word": "klappen",
+        "type": "verb",
+        "meaning": "to work out / succeed",
+        "partizip2": "geklappt",
+        "auxiliary": "haben",
+        "examples": [
+            "Keine Sorge, das klappt schon.",
+            "Hat der Umstieg gut geklappt?"
+        ]
+    },
+    {
+        "id": 11,
+        "word": "Anfang",
+        "type": "noun",
+        "article": "der",
+        "plural": "Anfänge",
+        "meaning": "beginning",
+        "examples": [
+            "Am Anfang war die Aufgabe schwer.",
+            "Der Anfang des Films war spannend."
+        ]
+    },
+    {
+        "id": 12,
+        "word": "Panne",
+        "type": "noun",
+        "article": "die",
+        "plural": "Pannen",
+        "meaning": "breakdown / mishap",
+        "examples": [
+            "Unser Auto hatte eine Panne.",
+            "Wegen einer Panne kam der Zug später."
+        ]
+    },
+    {
+        "id": 13,
+        "word": "Geldbörse",
+        "type": "noun",
+        "article": "die",
+        "plural": "Geldbörsen",
+        "meaning": "wallet / purse",
+        "examples": [
+            "Meine Fahrkarte ist in der Geldbörse.",
+            "Er hat seine Geldbörse im Bus vergessen."
+        ]
+    },
+    {
+        "id": 14,
+        "word": "Pech",
+        "type": "noun",
+        "article": "das",
+        "plural": "—",
+        "meaning": "bad luck",
+        "note": "Usually used without a plural.",
+        "examples": [
+            "Heute habe ich wirklich Pech.",
+            "Wir hatten Pech mit dem Wetter."
+        ]
+    },
+    {
+        "id": 15,
+        "word": "stoßen",
+        "type": "verb",
+        "meaning": "to bump / push",
+        "partizip2": "gestoßen",
+        "auxiliary": "haben / sein",
+        "note": "sich an etwas stoßen means to bump into something.",
+        "examples": [
+            "Ich habe mich am Tisch gestoßen.",
+            "Der Mann stößt die Tür auf."
+        ]
+    },
+    {
+        "id": 16,
+        "word": "Mitglied",
+        "type": "noun",
+        "article": "das",
+        "plural": "Mitglieder",
+        "meaning": "member",
+        "examples": [
+            "Sie ist Mitglied in einem Sportverein.",
+            "Alle Mitglieder treffen sich am Freitag."
+        ]
+    },
+    {
+        "id": 17,
+        "word": "mal",
+        "type": "particle",
+        "meaning": "just / sometime",
+        "note": "Informal modal particle; it often makes a request sound friendlier.",
+        "examples": [
+            "Komm mal bitte hierher.",
+            "Wir können mal zusammen reiten."
+        ]
+    },
+    {
+        "id": 18,
+        "word": "sonst",
+        "type": "adverb",
+        "meaning": "otherwise / else",
+        "examples": [
+            "Beeil dich, sonst verpassen wir den Zug.",
+            "Möchtest du sonst noch etwas?"
+        ]
+    },
+    {
+        "id": 19,
+        "word": "nun",
+        "type": "adverb",
+        "meaning": "now",
+        "examples": [
+            "Was machen wir nun?",
+            "Nun beginnt der zweite Teil."
+        ]
+    },
+    {
+        "id": 20,
+        "word": "reiten",
+        "type": "verb",
+        "meaning": "to ride a horse",
+        "partizip2": "geritten",
+        "auxiliary": "sein / haben",
+        "note": "Use sein for movement; haben is also possible when focusing on the activity.",
+        "examples": [
+            "Meine Tochter reitet jeden Samstag.",
+            "Wir sind durch den Wald geritten."
+        ]
+    }
+]

@@ -118,6 +118,30 @@ function displayMistakes(allMistakes, sessions, completed){
     .forEach(function(sessionNum){
 
         const mistakes = grouped[sessionNum];
+        const wordGroups = {};
+
+        mistakes.forEach(function(m){
+            const key = m.wordId || m.word;
+            if(!wordGroups[key]){
+                wordGroups[key] = {
+                    word: m.word,
+                    article: m.article,
+                    details: {}
+                };
+            }
+
+            const previous = wordGroups[key].details[m.questionType];
+            const previousTime = previous && previous.timestamp && previous.timestamp.toMillis
+                ? previous.timestamp.toMillis() : 0;
+            const currentTime = m.timestamp && m.timestamp.toMillis
+                ? m.timestamp.toMillis() : 0;
+
+            if(!previous || currentTime >= previousTime){
+                wordGroups[key].details[m.questionType] = m;
+            }
+        });
+
+        const mistakenWords = Object.values(wordGroups);
         const isCompleted =
         completed.includes(Number(sessionNum));
 
@@ -130,7 +154,7 @@ function displayMistakes(allMistakes, sessions, completed){
                  onclick="toggleMistakes(${sessionNum})">
 
                 ▶ Session ${sessionNum}
-                — ${mistakes.length} mistake${mistakes.length > 1 ? 's' : ''}
+                — ${mistakenWords.length} mistake${mistakenWords.length > 1 ? 's' : ''}
                 — ${isCompleted ? '✅ Completed' : '❌ Incomplete'}
 
             </div>
@@ -151,19 +175,26 @@ function displayMistakes(allMistakes, sessions, completed){
         );
 
 
-        mistakes.forEach(function(m){
+        mistakenWords.forEach(function(group){
 
 
             const articleText =
-            m.article
-            ? `<span class="mistake-article">${m.article}</span> `
+            group.article
+            ? `<span class="mistake-article">${group.article}</span> `
             : "";
 
-
-            const questionLabel =
-            m.questionType === "meaning"
-            ? "Meaning"
-            : "Article";
+            const details = ["meaning", "article"]
+            .filter(type => group.details[type])
+            .map(function(type){
+                const m = group.details[type];
+                const label = type === "meaning" ? "Meaning" : "Article";
+                return `<div class="mistake-detail">
+                    <strong>${label}:</strong>
+                    <span class="wrong-answer">${m.userAnswer}</span>
+                    →
+                    <span class="correct-answer">${m.correctAnswer}</span>
+                </div>`;
+            }).join("");
 
 
             list.innerHTML += `
@@ -171,15 +202,10 @@ function displayMistakes(allMistakes, sessions, completed){
             <div class="mistake-card">
 
                 <div class="mistake-word">
-                ${articleText}${m.word}
+                ${articleText}${group.word}
                 </div>
 
-                <div class="mistake-detail">
-                <strong>${questionLabel}:</strong>
-                <span class="wrong-answer">${m.userAnswer}</span>
-                →
-                <span class="correct-answer">${m.correctAnswer}</span>
-                </div>
+                ${details}
 
             </div>
 

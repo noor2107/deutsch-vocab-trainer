@@ -1,0 +1,241 @@
+[
+    {
+        "id": 1,
+        "word": "Alltag",
+        "type": "noun",
+        "article": "der",
+        "plural": "Alltage",
+        "meaning": "everyday life",
+        "examples": [
+            "Sport gehört zu meinem Alltag.",
+            "Im Alltag fahre ich oft mit dem Fahrrad."
+        ]
+    },
+    {
+        "id": 2,
+        "word": "schnarchen",
+        "type": "verb",
+        "meaning": "to snore",
+        "partizip2": "geschnarcht",
+        "auxiliary": "haben",
+        "examples": [
+            "Mein Bruder schnarcht sehr laut.",
+            "Ich habe letzte Nacht nicht geschnarcht."
+        ]
+    },
+    {
+        "id": 3,
+        "word": "Wecker",
+        "type": "noun",
+        "article": "der",
+        "plural": "Wecker",
+        "meaning": "alarm clock",
+        "examples": [
+            "Mein Wecker klingelt um sechs Uhr.",
+            "Ich habe den Wecker nicht gehört."
+        ]
+    },
+    {
+        "id": 4,
+        "word": "schließlich",
+        "type": "adverb",
+        "meaning": "finally / after all",
+        "examples": [
+            "Nach zwei Stunden kam der Bus schließlich.",
+            "Du musst schließlich morgen früh arbeiten."
+        ]
+    },
+    {
+        "id": 5,
+        "word": "sogar",
+        "type": "adverb",
+        "meaning": "even",
+        "examples": [
+            "Das Essen war sogar besser als gestern.",
+            "Sogar mein kleiner Bruder kann das."
+        ]
+    },
+    {
+        "id": 6,
+        "word": "bisher",
+        "type": "adverb",
+        "meaning": "so far / until now",
+        "examples": [
+            "Bisher hatte ich keine Probleme.",
+            "Wie gefällt dir der Kurs bisher?"
+        ]
+    },
+    {
+        "id": 7,
+        "word": "Arbeitgeber",
+        "type": "noun",
+        "article": "der",
+        "plural": "Arbeitgeber",
+        "meaning": "employer",
+        "note": "The feminine form is die Arbeitgeberin.",
+        "examples": [
+            "Mein Arbeitgeber bezahlt die Fortbildung.",
+            "Viele Arbeitgeber bieten flexible Arbeitszeiten an."
+        ]
+    },
+    {
+        "id": 8,
+        "word": "Sache",
+        "type": "noun",
+        "article": "die",
+        "plural": "Sachen",
+        "meaning": "thing / matter",
+        "examples": [
+            "Ich packe meine Sachen in den Koffer.",
+            "Das ist eine wichtige Sache."
+        ]
+    },
+    {
+        "id": 9,
+        "word": "auspacken",
+        "type": "verb",
+        "meaning": "to unpack",
+        "partizip2": "ausgepackt",
+        "auxiliary": "haben",
+        "note": "Separable verb: Ich packe den Koffer aus.",
+        "examples": [
+            "Nach der Reise packe ich meinen Koffer aus.",
+            "Wir haben die neuen Gläser ausgepackt."
+        ]
+    },
+    {
+        "id": 10,
+        "word": "einschlafen",
+        "type": "verb",
+        "meaning": "to fall asleep",
+        "partizip2": "eingeschlafen",
+        "auxiliary": "sein",
+        "note": "Separable verb: Das Kind schläft ein.",
+        "examples": [
+            "Das Baby schläft schnell ein.",
+            "Ich bin gestern auf dem Sofa eingeschlafen."
+        ]
+    },
+    {
+        "id": 11,
+        "word": "Arbeitstag",
+        "type": "noun",
+        "article": "der",
+        "plural": "Arbeitstage",
+        "meaning": "working day",
+        "examples": [
+            "Mein Arbeitstag beginnt um acht Uhr.",
+            "Nach einem langen Arbeitstag bin ich müde."
+        ]
+    },
+    {
+        "id": 12,
+        "word": "Lesezeichen",
+        "type": "noun",
+        "article": "das",
+        "plural": "Lesezeichen",
+        "meaning": "bookmark",
+        "examples": [
+            "Ich lege ein Lesezeichen in das Buch.",
+            "Dieses Lesezeichen hat mir meine Tochter gemacht."
+        ]
+    },
+    {
+        "id": 13,
+        "word": "zufrieden",
+        "type": "adjective",
+        "meaning": "satisfied / content",
+        "comparative": "zufriedener",
+        "superlative": "am zufriedensten",
+        "examples": [
+            "Ich bin mit meiner Arbeit zufrieden.",
+            "Die Gäste waren sehr zufrieden."
+        ]
+    },
+    {
+        "id": 14,
+        "word": "aufstehen",
+        "type": "verb",
+        "meaning": "to get up",
+        "partizip2": "aufgestanden",
+        "auxiliary": "sein",
+        "note": "Separable verb: Ich stehe früh auf.",
+        "examples": [
+            "An Werktagen stehe ich um sieben Uhr auf.",
+            "Am Sonntag bin ich spät aufgestanden."
+        ]
+    },
+    {
+        "id": 15,
+        "word": "Schlüssel",
+        "type": "noun",
+        "article": "der",
+        "plural": "Schlüssel",
+        "meaning": "key",
+        "examples": [
+            "Ich finde meinen Schlüssel nicht.",
+            "Der Wohnungsschlüssel liegt auf dem Tisch."
+        ]
+    },
+    {
+        "id": 16,
+        "word": "Tasche",
+        "type": "noun",
+        "article": "die",
+        "plural": "Taschen",
+        "meaning": "bag / pocket",
+        "examples": [
+            "Meine Geldbörse ist in der Tasche.",
+            "Sie trägt eine schwere Tasche."
+        ]
+    },
+    {
+        "id": 17,
+        "word": "Termin",
+        "type": "noun",
+        "article": "der",
+        "plural": "Termine",
+        "meaning": "appointment",
+        "examples": [
+            "Ich habe morgen einen Termin beim Arzt.",
+            "Können wir einen neuen Termin vereinbaren?"
+        ]
+    },
+    {
+        "id": 18,
+        "word": "Feierabend",
+        "type": "noun",
+        "article": "der",
+        "plural": "Feierabende",
+        "meaning": "end of the working day",
+        "note": "Feierabend haben/machen means to finish work for the day.",
+        "examples": [
+            "Um fünf Uhr habe ich Feierabend.",
+            "Nach Feierabend treffe ich meine Freunde."
+        ]
+    },
+    {
+        "id": 19,
+        "word": "Nachricht",
+        "type": "noun",
+        "article": "die",
+        "plural": "Nachrichten",
+        "meaning": "message / news item",
+        "examples": [
+            "Ich schicke dir später eine Nachricht.",
+            "Hast du meine Nachricht gelesen?"
+        ]
+    },
+    {
+        "id": 20,
+        "word": "benutzen",
+        "type": "verb",
+        "meaning": "to use",
+        "partizip2": "benutzt",
+        "auxiliary": "haben",
+        "examples": [
+            "Darf ich dein Handy benutzen?",
+            "Wir haben den alten Eingang benutzt."
+        ]
+    }
+]

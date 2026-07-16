@@ -1,0 +1,240 @@
+[
+    {
+        "id": 1,
+        "word": "Geschichte",
+        "type": "noun",
+        "article": "die",
+        "plural": "Geschichten",
+        "meaning": "story / history",
+        "examples": [
+            "Der Großvater erzählt eine lustige Geschichte.",
+            "In der Schule lernen wir deutsche Geschichte."
+        ]
+    },
+    {
+        "id": 2,
+        "word": "Reihenfolge",
+        "type": "noun",
+        "article": "die",
+        "plural": "Reihenfolgen",
+        "meaning": "order / sequence",
+        "examples": [
+            "Bringe die Bilder in die richtige Reihenfolge.",
+            "Die Reihenfolge der Übungen ist wichtig."
+        ]
+    },
+    {
+        "id": 3,
+        "word": "merken",
+        "type": "verb",
+        "meaning": "to notice / remember",
+        "partizip2": "gemerkt",
+        "auxiliary": "haben",
+        "note": "sich etwas merken means to remember something.",
+        "examples": [
+            "Ich kann mir die neue Nummer nicht merken.",
+            "Hast du den Unterschied gemerkt?"
+        ]
+    },
+    {
+        "id": 4,
+        "word": "erleben",
+        "type": "verb",
+        "meaning": "to experience",
+        "partizip2": "erlebt",
+        "auxiliary": "haben",
+        "examples": [
+            "Im Urlaub haben wir viel erlebt.",
+            "Sie möchte ein Abenteuer erleben."
+        ]
+    },
+    {
+        "id": 5,
+        "word": "erlauben",
+        "type": "verb",
+        "meaning": "to allow / permit",
+        "partizip2": "erlaubt",
+        "auxiliary": "haben",
+        "examples": [
+            "Meine Eltern erlauben mir die Reise.",
+            "Fotografieren ist hier nicht erlaubt."
+        ]
+    },
+    {
+        "id": 6,
+        "word": "Stell dir vor!",
+        "type": "phrase",
+        "meaning": "Just imagine!",
+        "note": "Informal expression used to introduce surprising news.",
+        "examples": [
+            "Stell dir vor, ich habe die Prüfung bestanden!",
+            "Stell dir vor, wir treffen uns dort wieder!"
+        ]
+    },
+    {
+        "id": 7,
+        "word": "sich vorstellen",
+        "type": "verb",
+        "meaning": "to introduce oneself / imagine",
+        "partizip2": "vorgestellt",
+        "auxiliary": "haben",
+        "note": "Separable reflexive verb: Ich stelle mich vor.",
+        "examples": [
+            "Darf ich mich kurz vorstellen?",
+            "Ich kann mir ein Leben ohne Musik nicht vorstellen."
+        ]
+    },
+    {
+        "id": 8,
+        "word": "bemerken",
+        "type": "verb",
+        "meaning": "to notice",
+        "partizip2": "bemerkt",
+        "auxiliary": "haben",
+        "examples": [
+            "Ich habe den Fehler sofort bemerkt.",
+            "Sie bemerkt, dass der Bus schon da ist."
+        ]
+    },
+    {
+        "id": 9,
+        "word": "erfahren",
+        "type": "verb",
+        "meaning": "to find out / learn",
+        "partizip2": "erfahren",
+        "auxiliary": "haben",
+        "examples": [
+            "Wann hast du die Nachricht erfahren?",
+            "Im Kurs erfahren wir viel über Deutschland."
+        ]
+    },
+    {
+        "id": 10,
+        "word": "erzählen",
+        "type": "verb",
+        "meaning": "to tell / narrate",
+        "partizip2": "erzählt",
+        "auxiliary": "haben",
+        "examples": [
+            "Er erzählt uns eine spannende Geschichte.",
+            "Kannst du mir von deiner Reise erzählen?"
+        ]
+    },
+    {
+        "id": 11,
+        "word": "reden",
+        "type": "verb",
+        "meaning": "to talk",
+        "partizip2": "geredet",
+        "auxiliary": "haben",
+        "examples": [
+            "Wir müssen über das Problem reden.",
+            "Sie hat lange mit ihrer Freundin geredet."
+        ]
+    },
+    {
+        "id": 12,
+        "word": "raten",
+        "type": "verb",
+        "meaning": "to guess / advise",
+        "partizip2": "geraten",
+        "auxiliary": "haben",
+        "note": "jemandem etwas raten means to advise; etwas raten means to guess.",
+        "examples": [
+            "Kannst du die richtige Antwort raten?",
+            "Der Arzt hat mir zu mehr Bewegung geraten."
+        ]
+    },
+    {
+        "id": 13,
+        "word": "jemand",
+        "type": "pronoun",
+        "meaning": "someone / somebody",
+        "examples": [
+            "Jemand wartet vor der Tür.",
+            "Hat jemand meinen Schlüssel gesehen?"
+        ]
+    },
+    {
+        "id": 14,
+        "word": "klingen",
+        "type": "verb",
+        "meaning": "to sound",
+        "partizip2": "geklungen",
+        "auxiliary": "haben",
+        "examples": [
+            "Deine Idee klingt sehr gut.",
+            "Die Musik hat schön geklungen."
+        ]
+    },
+    {
+        "id": 15,
+        "word": "peinlich",
+        "type": "adjective",
+        "meaning": "embarrassing",
+        "comparative": "peinlicher",
+        "superlative": "am peinlichsten",
+        "examples": [
+            "Die Situation war mir sehr peinlich.",
+            "Es ist peinlich, seinen Namen zu vergessen."
+        ]
+    },
+    {
+        "id": 16,
+        "word": "verschieden",
+        "type": "adjective",
+        "meaning": "different / various",
+        "examples": [
+            "Wir haben verschiedene Meinungen.",
+            "Die beiden Taschen sind ganz verschieden."
+        ]
+    },
+    {
+        "id": 17,
+        "word": "jeder",
+        "type": "determiner",
+        "meaning": "each / every",
+        "note": "The ending changes with gender and case: jeder, jede, jedes.",
+        "examples": [
+            "Jeder Teilnehmer bekommt ein Blatt.",
+            "Ich lerne jeden Tag Deutsch."
+        ]
+    },
+    {
+        "id": 18,
+        "word": "Zeichen",
+        "type": "noun",
+        "article": "das",
+        "plural": "Zeichen",
+        "meaning": "sign / symbol",
+        "examples": [
+            "Dieses Zeichen bedeutet Stopp.",
+            "Sie gibt mir ein Zeichen mit der Hand."
+        ]
+    },
+    {
+        "id": 19,
+        "word": "Ausrede",
+        "type": "noun",
+        "article": "die",
+        "plural": "Ausreden",
+        "meaning": "excuse",
+        "examples": [
+            "Das ist nur eine schlechte Ausrede.",
+            "Er findet immer eine neue Ausrede."
+        ]
+    },
+    {
+        "id": 20,
+        "word": "ausreden",
+        "type": "verb",
+        "meaning": "to finish speaking",
+        "partizip2": "ausgeredet",
+        "auxiliary": "haben",
+        "note": "Separable verb: Lass mich bitte ausreden.",
+        "examples": [
+            "Bitte lass mich zuerst ausreden.",
+            "Sie hat noch nicht ausgeredet."
+        ]
+    }
+]

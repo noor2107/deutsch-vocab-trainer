@@ -8,5 +8,30 @@
         "session": 2,
         "file": "session_002.json",
         "word_count": 20
+    },
+    {
+        "session": 3,
+        "file": "session_003.json",
+        "word_count": 20
+    },
+    {
+        "session": 4,
+        "file": "session_004.json",
+        "word_count": 20
+    },
+    {
+        "session": 5,
+        "file": "session_005.json",
+        "word_count": 20
+    },
+    {
+        "session": 6,
+        "file": "session_006.json",
+        "word_count": 20
+    },
+    {
+        "session": 7,
+        "file": "session_007.json",
+        "word_count": 20
     }
 ]

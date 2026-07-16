@@ -448,6 +448,11 @@ function showFeedback(correct, word){
     }
 
 
+    html += `<div class="learning-details">
+        <h3>Learn this word</h3>
+        ${learningDetailsHtml(word, false)}
+    </div>`;
+
     feedback.innerHTML = html;
 
 
@@ -497,41 +502,26 @@ async function showResult(){
 
     try{
 
-        if(mistakes === 0){
-
-            await saveCompletedSession(sessionNumber);
-
-            await clearSessionMistakes(sessionNumber);
-
-        }
-
-        else{
-
-            for(const m of sessionMistakes){
-
-                await logMistake(
-
-                    sessionNumber,
-
-                    m.word,
-
-                    m.userAnswer,
-
-                    m.correctAnswer,
-
-                    m.questionType
-
-                );
-
-            }
-
-        }
+        await saveSessionOutcome(
+            sessionNumber,
+            sessionMistakes,
+            mistakes === 0
+        );
 
     }
 
     catch(error){
 
         console.error("Error saving results:", error);
+
+        quizContainer.innerHTML = `
+            <div class="feedback-wrong">
+                <h2>Could not save this attempt</h2>
+                <p>Your previous saved result was not changed. Please try again.</p>
+                <button onclick="showResult()">Try saving again</button>
+            </div>`;
+
+        return;
 
     }
 

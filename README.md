@@ -36,7 +36,8 @@ deutsch-vocab-trainer/
 
 ### 1. Create vocabulary file
 
-Create `vocabulary/session_XXX.json` with this format:
+Create `vocabulary/session_XXX.json` with this format. Every session must contain
+exactly 20 entries, with IDs 1 through 20:
 
 ```json
 [
@@ -47,14 +48,17 @@ Create `vocabulary/session_XXX.json` with this format:
         "article": "das",
         "plural": "Häuser",
         "meaning": "house",
-        "example": "Das Haus ist groß."
+        "examples": [
+            "Das Haus ist groß.",
+            "Wir wohnen in einem alten Haus."
+        ]
     }
 ]
 ```
 
 ### Word types
 
-**Nouns** (include article and plural):
+**Nouns** (include article, plural, and two examples):
 ```json
 {
     "id": 1,
@@ -63,11 +67,14 @@ Create `vocabulary/session_XXX.json` with this format:
     "article": "der",
     "plural": "Hunde",
     "meaning": "dog",
-    "example": "Der Hund spielt."
+    "examples": [
+        "Der Hund spielt.",
+        "Ich gehe mit dem Hund spazieren."
+    ]
 }
 ```
 
-**Verbs** (include Partizip II):
+**Verbs** (include Partizip II and the perfect auxiliary):
 ```json
 {
     "id": 11,
@@ -75,7 +82,11 @@ Create `vocabulary/session_XXX.json` with this format:
     "type": "verb",
     "meaning": "to go",
     "partizip2": "gegangen",
-    "example": "Ich bin gegangen."
+    "auxiliary": "sein",
+    "examples": [
+        "Ich gehe zu Fuß zur Arbeit.",
+        "Wir sind nach Hause gegangen."
+    ]
 }
 ```
 
@@ -86,7 +97,12 @@ Create `vocabulary/session_XXX.json` with this format:
     "word": "gut",
     "type": "adjective",
     "meaning": "good",
-    "example": "Das ist gut."
+    "comparative": "besser",
+    "superlative": "am besten",
+    "examples": [
+        "Das Essen ist gut.",
+        "Heute geht es mir besser."
+    ]
 }
 ```
 
@@ -98,10 +114,22 @@ Add entry to `data/sessions.json`:
 {
     "session": 3,
     "file": "session_003.json",
-    "word_count": 20,
-    "completed": false
+    "word_count": 20
 }
 ```
+
+The `file` value is relative to `vocabulary/`. The displayed `word_count` must
+match the actual number of entries. Completion is stored per user in Firestore;
+do not add a `completed` property to this file.
+
+### Optional learning information
+
+- `note`: a short usage or grammar note
+- `comparative` and `superlative`: comparison forms when useful
+- `examples`: exactly two A2-level example sentences for new vocabulary
+
+The notebook and post-answer quiz panel display all available learning
+information. Older entries with a single `example` field remain supported.
 
 ## Configuration
 
@@ -116,10 +144,15 @@ Edit `data/settings.json`:
 ```
 
 - `meaning_options`: Number of answer choices for meaning questions
-- `article_options`: Number of article choices (always der/die/das)
+- Article questions always use the three choices `der`, `die`, and `das`.
+- `session_size` and `article_options` are retained for compatibility but are
+  not currently read by the application.
 
 ## Progress Tracking
 
-Progress is saved in browser localStorage. To reset progress, clear localStorage for this site.
+Progress and mistakes are saved to the signed-in user's Firebase Firestore
+record. Each finished attempt replaces that session's previous mistake list.
+A perfect attempt marks the session complete; a later failed attempt marks it
+incomplete again. Mistakes can also be cleared from the Mistakes page.
 
-**Disclaimer:** This project is built with ChatGPT and OpenCode (Big Pickle OpenCode Zen)
+**Disclaimer:** This project was vibe-coded with the help of Codex and OpenCode.

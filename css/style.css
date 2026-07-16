@@ -249,6 +249,27 @@ button {
 
 }
 
+.learning-details {
+    background: rgba(255, 255, 255, 0.75);
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    margin-top: 15px;
+    padding: 12px;
+    text-align: left;
+}
+
+.learning-details h3 {
+    margin-top: 0;
+}
+
+.learning-examples ol {
+    margin-bottom: 0;
+    padding-left: 24px;
+}
+
+.learning-examples li {
+    margin: 6px 0;
+}
+
 
 .quiz-nav {
 
@@ -446,6 +467,10 @@ button {
 
     font-size: 14px;
 
+}
+
+.mistake-detail + .mistake-detail {
+    margin-top: 6px;
 }
 
 

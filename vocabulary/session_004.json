@@ -1,0 +1,239 @@
+[
+    {
+        "id": 1,
+        "word": "Schatz",
+        "type": "noun",
+        "article": "der",
+        "plural": "Schätze",
+        "meaning": "treasure / darling",
+        "examples": [
+            "Das Kind sucht einen alten Schatz.",
+            "Guten Morgen, mein Schatz!"
+        ]
+    },
+    {
+        "id": 2,
+        "word": "Verwandte",
+        "type": "noun",
+        "article": "die",
+        "plural": "Verwandten",
+        "meaning": "female relative",
+        "note": "A male relative is der Verwandte; a female relative is die Verwandte.",
+        "examples": [
+            "Am Wochenende besuchen wir unsere Verwandten.",
+            "Eine Verwandte von mir lebt in Wien."
+        ]
+    },
+    {
+        "id": 3,
+        "word": "Schwägerin",
+        "type": "noun",
+        "article": "die",
+        "plural": "Schwägerinnen",
+        "meaning": "sister-in-law",
+        "examples": [
+            "Meine Schwägerin heißt Anna.",
+            "Wir feiern den Geburtstag meiner Schwägerin."
+        ]
+    },
+    {
+        "id": 4,
+        "word": "Neffe",
+        "type": "noun",
+        "article": "der",
+        "plural": "Neffen",
+        "meaning": "nephew",
+        "examples": [
+            "Mein Neffe ist acht Jahre alt.",
+            "Ich spiele oft Fußball mit meinem Neffen."
+        ]
+    },
+    {
+        "id": 5,
+        "word": "Onkel",
+        "type": "noun",
+        "article": "der",
+        "plural": "Onkel",
+        "meaning": "uncle",
+        "examples": [
+            "Mein Onkel arbeitet in Berlin.",
+            "Am Sonntag besucht uns mein Onkel."
+        ]
+    },
+    {
+        "id": 6,
+        "word": "Nichte",
+        "type": "noun",
+        "article": "die",
+        "plural": "Nichten",
+        "meaning": "niece",
+        "examples": [
+            "Seine Nichte geht schon zur Schule.",
+            "Er kauft seiner Nichte ein Buch."
+        ]
+    },
+    {
+        "id": 7,
+        "word": "sympathisch",
+        "type": "adjective",
+        "meaning": "likeable / pleasant",
+        "comparative": "sympathischer",
+        "superlative": "am sympathischsten",
+        "examples": [
+            "Unsere neue Nachbarin ist sehr sympathisch.",
+            "Der Lehrer wirkt freundlich und sympathisch."
+        ]
+    },
+    {
+        "id": 8,
+        "word": "aussehen",
+        "type": "verb",
+        "meaning": "to look / appear",
+        "partizip2": "ausgesehen",
+        "auxiliary": "haben",
+        "note": "Separable verb: Du siehst müde aus.",
+        "examples": [
+            "Du siehst heute glücklich aus.",
+            "Wie hat das Hotel ausgesehen?"
+        ]
+    },
+    {
+        "id": 9,
+        "word": "Familienmitglied",
+        "type": "noun",
+        "article": "das",
+        "plural": "Familienmitglieder",
+        "meaning": "family member",
+        "examples": [
+            "Jedes Familienmitglied hilft im Haushalt.",
+            "Sie lädt alle Familienmitglieder zur Feier ein."
+        ]
+    },
+    {
+        "id": 10,
+        "word": "Rente",
+        "type": "noun",
+        "article": "die",
+        "plural": "Renten",
+        "meaning": "pension / retirement payment",
+        "examples": [
+            "Mein Vater geht nächstes Jahr in Rente.",
+            "Von ihrer Rente kann sie gut leben."
+        ]
+    },
+    {
+        "id": 11,
+        "word": "berufstätig",
+        "type": "adjective",
+        "meaning": "employed / working",
+        "examples": [
+            "Beide Eltern sind berufstätig.",
+            "Sie ist berufstätig und hat zwei Kinder."
+        ]
+    },
+    {
+        "id": 12,
+        "word": "alleinerziehend",
+        "type": "adjective",
+        "meaning": "single-parent / raising a child alone",
+        "examples": [
+            "Er ist alleinerziehend und arbeitet halbtags.",
+            "Viele Alleinerziehende brauchen flexible Arbeitszeiten."
+        ]
+    },
+    {
+        "id": 13,
+        "word": "Familienstand",
+        "type": "noun",
+        "article": "der",
+        "plural": "Familienstände",
+        "meaning": "marital status",
+        "note": "Common form labels are ledig, verheiratet, geschieden and verwitwet.",
+        "examples": [
+            "Bitte geben Sie Ihren Familienstand an.",
+            "Als Familienstand gibt sie verheiratet an."
+        ]
+    },
+    {
+        "id": 14,
+        "word": "Enkel",
+        "type": "noun",
+        "article": "der",
+        "plural": "Enkel",
+        "meaning": "grandson / grandchild",
+        "note": "The feminine form is die Enkelin.",
+        "examples": [
+            "Ihr Enkel besucht sie jeden Freitag.",
+            "Die Großeltern spielen mit ihren Enkeln."
+        ]
+    },
+    {
+        "id": 15,
+        "word": "schwanger",
+        "type": "adjective",
+        "meaning": "pregnant",
+        "examples": [
+            "Meine Schwester ist im fünften Monat schwanger.",
+            "Eine schwangere Frau sitzt im Wartezimmer."
+        ]
+    },
+    {
+        "id": 16,
+        "word": "Gefühl",
+        "type": "noun",
+        "article": "das",
+        "plural": "Gefühle",
+        "meaning": "feeling",
+        "examples": [
+            "Ich habe ein gutes Gefühl.",
+            "Sie spricht offen über ihre Gefühle."
+        ]
+    },
+    {
+        "id": 17,
+        "word": "vermissen",
+        "type": "verb",
+        "meaning": "to miss someone or something",
+        "partizip2": "vermisst",
+        "auxiliary": "haben",
+        "examples": [
+            "Ich vermisse meine Familie.",
+            "Hast du deine Freunde im Urlaub vermisst?"
+        ]
+    },
+    {
+        "id": 18,
+        "word": "Schwiegervater",
+        "type": "noun",
+        "article": "der",
+        "plural": "Schwiegerväter",
+        "meaning": "father-in-law",
+        "examples": [
+            "Mein Schwiegervater kocht sehr gern.",
+            "Wir besuchen meinen Schwiegervater am Sonntag."
+        ]
+    },
+    {
+        "id": 19,
+        "word": "Schwiegereltern",
+        "type": "noun",
+        "article": "die",
+        "plural": "—",
+        "meaning": "parents-in-law",
+        "note": "This word is normally used only in the plural.",
+        "examples": [
+            "Meine Schwiegereltern wohnen auf dem Land.",
+            "Wir essen heute bei meinen Schwiegereltern."
+        ]
+    },
+    {
+        "id": 20,
+        "word": "gemeinsam",
+        "type": "adverb",
+        "meaning": "together / jointly",
+        "examples": [
+            "Wir kochen am Abend gemeinsam.",
+            "Die Familie löst das Problem gemeinsam."
+        ]
+    }
+]
