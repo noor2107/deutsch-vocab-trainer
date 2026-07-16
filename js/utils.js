@@ -1,7 +1,7 @@
 async function fetchSessions(){
 
     const response =
-    await fetch("data/sessions.json");
+    await fetch("data/sessions.json", { cache: "no-cache" });
 
 
     if(!response.ok){
@@ -19,7 +19,7 @@ async function fetchSessions(){
 async function fetchWords(filename){
 
     const response =
-    await fetch("vocabulary/" + filename);
+    await fetch("vocabulary/" + filename, { cache: "no-cache" });
 
 
     if(!response.ok){
@@ -37,7 +37,7 @@ async function fetchWords(filename){
 async function fetchSettings(){
 
     const response =
-    await fetch("data/settings.json");
+    await fetch("data/settings.json", { cache: "no-cache" });
 
 
     if(!response.ok){
